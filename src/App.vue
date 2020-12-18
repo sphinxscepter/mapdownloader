@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Home></Home>
   </div>
 </template>
+
+<script>
+import Home from './views/home'
+export default {
+  name: 'app index page',
+  components: {
+    Home
+  }
+}
+</script>
 
 <style lang="stylus">
 #app
@@ -15,5 +21,4 @@
   -moz-osx-font-smoothing grayscale
   text-align center
   color #2c3e50
-  margin-top 60px
 </style>
